@@ -41,6 +41,7 @@ public class Game {
         if (gameOver()) return;
         openBox(coord);
         checkWinner();
+        countBombs = bomb.getTotalBombs() - flag.getCountOfFlaged();
     }
 
     private boolean gameOver() {
